@@ -1,0 +1,109 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /currencies/:
+    get:
+      operationId: listCurrency_s
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - currencies
+    post:
+      operationId: createCurrency_
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - currencies
+    delete:
+      operationId: destroyCurrency_
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+      - currencies
+  /currencies/{id}/:
+    get:
+      operationId: retrieveCurrency_
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - currencies
+    post:
+      operationId: createCurrency_
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - currencies
+    delete:
+      operationId: destroyCurrency_
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - currencies
